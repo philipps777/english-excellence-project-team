@@ -39,3 +39,38 @@
 .leave-application-section-privacy-link {
   text-decoration: underline;
 }
+
+@media only screen and (min-width: 768px) {
+  .leave-application-section-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .leave-application-section-content textarea.textfield-input {
+    margin-bottom: 32px;
+  }
+
+  .leave-application-section-choose-list {
+    display: flex;
+    gap: 20px;
+  }
+  
+
+  .leave-application-section-form-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .leave-application-section-choose-list {
+    margin-bottom: 24px;
+  }
+
+  .leave-application-section-choose-list-item {
+    margin-bottom: 0;;
+  }
+
+  .leave-application-section-privacy-text {
+    font-size: 14px;
+    line-height: 1.71429;
+  }
+}
