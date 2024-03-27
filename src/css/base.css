@@ -153,13 +153,15 @@ body {
 }
 
 .button {
+  display: inline-block;
+  text-align: center;
   font-size: 14px;
   line-height: 1.71429;
   font-weight: 700;
   border: 1px solid var(--green);
   background-color: var(--green);
   color: var(--white);
-  padding: 13px 86px;
+  padding: 13px 16px;
   border-radius: 12px;
   cursor: pointer;
   transition: var(--transition-timing);
@@ -182,11 +184,15 @@ body {
   color: var(--green);
 }
 
+.button.button--block {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .button {
     font-size: 18px;
     line-height: 1.55556;
-    padding: 15px 63px;
+    padding: 15px 24px;
   }
 }
 
