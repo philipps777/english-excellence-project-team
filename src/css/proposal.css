@@ -27,7 +27,7 @@
     z-index: 1000;
 }
 
-/* .proposal-overlay::before,
+.proposal-overlay::before,
 .proposal-overlay::after {
     content: '';
     position: absolute;
@@ -37,9 +37,9 @@
     border-radius: 16px;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -5;
-} */
+}
 
-/* .proposal-overlay::before {
+.proposal-overlay::before {
     left: 0;
     transform: rotate(-9deg);
     background-color: var(--green-light);
@@ -50,7 +50,7 @@
     transform: rotate(11deg);
     flex-shrink: 0;
     background-color: var(--white-transparent);
-} */
+}
 
 /* ???????????????????????????????????????????????? */
 
@@ -71,8 +71,9 @@
 }
 
 .proposal-list-item {
+    display: flex;
+    align-items: center;
     position: relative;
-    padding-left: 28px;
     font-size: 14px;
     font-weight: 700;
     color: var(--black);
@@ -80,15 +81,14 @@
     letter-spacing: -0.28px;
 }
 
-.proposal-list-item::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.proposal-icon {
+    margin-right: 8px;
     width: 20px;
     height: 20px;
-    background-image: url("../img/proposal/custom-marker.svg");
+}
+
+.proposal-li {
+    flex: 1;
 }
 
 .proposal-link {
@@ -137,16 +137,13 @@
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: -0.4px;
-        padding-left: 44px;
         width: 440px;
     }
 
-    .proposal-list-item::before {
+    .proposal-icon {
+        margin-right: 16px;
         width: 28px;
         height: 28px;
-        background-image: url("../img/proposal/custom-marker-tablet-desktop.svg");
-        background-repeat: no-repeat;
-        background-size: contain;                    
     }
 
     .proposal-text-content {
@@ -171,7 +168,7 @@
         height: 263px;
     }
 
-    /* .proposal-overlay::before {
+    .proposal-overlay::before {
         left: 0;
         transform: rotate(-9.864deg);
         background-color: var(--green-light);
@@ -182,7 +179,7 @@
         transform: rotate(10.665deg);
         flex-shrink: 0;
         background-color: var(--white-transparent);
-    } */
+    }
 
 }
 
@@ -205,7 +202,7 @@
     }
 
     .proposal-list-item {
-        width: 645px;
+        width: 655px;
     }
 
     .proposal-list-item:nth-child(2) {
@@ -216,10 +213,6 @@
         margin-bottom: 39px;
     }
 
-    .proposal-list-item::before {
-    background-image: url("../img/proposal/custom-marker.svg");
-}
-
     .proposal-link {
         font-size: 18px;
     }
@@ -229,18 +222,17 @@
         background-color: var(--green-active);
     }
 
-    /* .proposal-overlay::before {
+    .proposal-overlay::before {
         left: 0;
         transform: rotate(-8deg);
         background-color: var(--green-light);
     }
 
     .proposal-overlay::after {
-        height: 402px;
         right: 0;
         transform: rotate(11deg);
         flex-shrink: 0;
         background-color: var(--white-transparent);
-    } */
+    }
 
 }
