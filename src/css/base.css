@@ -129,6 +129,8 @@ body {
   line-height: 1.71429;
   color: var(--black-50-transparent);
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 20px;
 }
 
@@ -294,6 +296,6 @@ textarea.textfield-input {
   .radio-label::before {
     width: 20px;
     height: 20px;
-    padding: 3px
+    padding: 3px;
   }
 }
