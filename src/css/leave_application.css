@@ -31,7 +31,7 @@
 }
 
 .leave-application-section-privacy-text {
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--black-50-transparent);
   font-size: 12px;
   line-height: 1.33333;
 }
