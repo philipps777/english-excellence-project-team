@@ -1,0 +1,194 @@
+@media screen and (max-width: 767px) {
+    .about-custom-list {
+        counter-reset: item;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 0;
+    }
+
+    .about-custom-list-item::before {
+        content: counter(item, decimal-leading-zero);
+        counter-increment: item;
+        color: var(--green);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+    }
+
+    .about-list-item-desc {
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: -0.02em;
+        margin-top: 16px;
+        margin-right: 10px;
+    }
+
+    .about-custom-list-item {
+        border-radius: 16px;
+        background: var(--gray);
+        height: 160px;
+        padding: 32px;
+        list-style-type: none;
+    }
+
+    .about-custom-list::after {
+        content: '';
+        height: 313px;
+        border-radius: 16px;
+        background-color: var(--green);
+        background-image: url('../../img/about_us/about-girl-bg.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 255px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .about-subtitle {
+        max-width: 658px;
+    }
+
+    .about-custom-list {
+        counter-reset: item;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-inline-start: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-custom-list-item::before {
+        content: counter(item, decimal-leading-zero);
+        counter-increment: item;
+        color: var(--green);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+    }
+
+    .about-list-item-desc {
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: -0.02em;
+        margin-top: 16px;
+    }
+
+    .about-list-item-br {
+        margin-right: 10px;
+    }
+
+    .about-custom-list-item {
+        border-radius: 30px;
+        background: var(--gray);
+        width: calc((100% - 32px) / 2);
+        height: 160px;
+        padding: 32px;
+        list-style-type: none;
+    }
+
+    .about-custom-list::after {
+        content: '';
+        width: 100%;
+        height: 243px;
+        border-radius: 30px;
+        background-color: var(--green);
+        background-image: url('../../img/about_us/about-girl-bg.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 255px;
+    }
+
+    .custom-list-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-title-decor::after {
+        width: 120%;
+    }
+
+    .about-subtitle {
+        max-width: 658px;
+    }
+
+    .about-custom-list {
+        counter-reset: item;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        gap: 32px;
+        padding-left: 0;
+        padding-right: 0;
+        list-style-type: none;
+    }
+
+    .about-custom-list-item::before {
+        content: counter(item, decimal-leading-zero);
+        counter-increment: item;
+        color: var(--green);
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.1;
+        /* 114.286% */
+        letter-spacing: -0.02em;
+    }
+
+    .about-list-item-desc {
+        color: var(--black);
+        font-weight: 700;
+        margin-top: 16px;
+        margin-right: 10px;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+    }
+
+    .about-custom-list-item {
+        border-radius: 30px;
+        background: var(--gray);
+        width: calc((100% - 365px) / 2);
+        height: 160px;
+        padding: 32px;
+    }
+
+    .about-custom-list::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -9px;
+        width: 310px;
+        height: 352px;
+        border-radius: 30px;
+        background-color: var(--green);
+        background-image: url('../../img/about_us/about-desktop-bg.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 255px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 1279px),
+screen and (min-resolution: 2dppx) and (max-width: 1279px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 1279px) {
+    .about-custom-list::after {
+        background-image: url('../../img/about_us/about-girl-bg@2x.png');
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+screen and (min-resolution: 2dppx) and (min-width: 1280px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+    .about-custom-list::after {
+        background-image: url('../../img/about_us/about-desktop-bg@2x.png');
+    }
+}
