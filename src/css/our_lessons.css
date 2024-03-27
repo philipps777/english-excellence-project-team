@@ -1,0 +1,98 @@
+.lessons-item {
+  height: 400px;
+  border-radius: 16px;
+  border: 1px solid var(--green);
+  background-color: var(--white);
+  padding: 40px 20px;
+}
+.lessons-item:nth-child(2n) {
+  background-color: var(--green);
+}
+.lessons-item-title {
+  color: var(--black);
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin-bottom: 16px;
+}
+.lessons-item:nth-child(2n) > .lessons-item-title {
+  color: var(--white);
+}
+.lessons-item-price {
+  color: var(--black);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.13;
+  letter-spacing: -0.64px;
+  margin-bottom: 40px;
+}
+.lessons-item:nth-child(2n) > .lessons-item-price {
+  color: var(--white);
+}
+.lessons-item-description {
+  color: rgba(18, 20, 23, 0.5);
+  height: 132px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.lessons-item:nth-child(2n) > .lessons-item-description {
+  color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .lessons-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lessons-title {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+  }
+  .lessons-text {
+    font-size: 18px;
+    line-height: 1.67;
+    margin-bottom: 64px;
+  }
+  .lessons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .lessons-item {
+    height: 404px;
+    border-radius: 30px;
+    flex-basis: calc((100% - 32px) / 2);
+    padding: 32px 16px;
+  }
+  .lessons-item-price {
+    line-height: 1.38;
+    margin-bottom: 32px;
+  }
+  .lessons-item-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .lessons-text {
+    max-width: 665px;
+    margin: 0 auto 64px;
+  }
+  .lessons-item {
+    flex-basis: calc((100% - 64px) / 3);
+    padding: 32px;
+  }
+  .lessons-item-price {
+    margin-bottom: 16px;
+  }
+  .lessons-item-description {
+    height: 148px;
+  }
+}
