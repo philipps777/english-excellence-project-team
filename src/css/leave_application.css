@@ -1,0 +1,135 @@
+.leave-application-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.leave-application-section-info {
+  display: none;
+}
+
+.leave-application-section-form-title {
+  color: var(--black);
+  font-size: 18px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -0.36px;
+  margin-bottom: 16px;
+}
+
+.leave-application-section-choose-list {
+  margin-bottom: 40px;
+}
+
+.leave-application-section-choose-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.leave-application-section-button {
+  margin-bottom: 16px;
+}
+
+.leave-application-section-privacy-text {
+  color: var(--black-50-transparent);
+  font-size: 12px;
+  line-height: 1.33333;
+}
+
+.leave-application-section-privacy-link {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .leave-application-section-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .leave-application-section-content textarea.textfield-input {
+    margin-bottom: 32px;
+  }
+
+  .leave-application-section-choose-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .leave-application-section-form-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .leave-application-section-choose-list {
+    margin-bottom: 24px;
+  }
+
+  .leave-application-section-choose-list-item {
+    margin-bottom: 0;
+  }
+
+  .leave-application-section-privacy-text {
+    font-size: 14px;
+    line-height: 1.71429;
+  }
+
+  .leave-application-section-description {
+    max-width: 586px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .leave-application-section-content {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .leave-application-section-form {
+    margin: 0;
+    max-width: none;
+    flex: 1;
+    margin-left: 16px;
+  }
+
+  .leave-application-section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 492px;
+    border-radius: 30px;
+    background-color: var(--green);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-image: url('../img/leave_application/application.png');
+    padding: 0 20px 40px;
+    margin-right: 16px;
+  }
+
+  .leave-application-section-info-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+  }
+
+  .leave-application-section-info-text {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .leave-application-section-description {
+    max-width: 708px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .leave-application-section-info {
+    background-image: url('../img/leave_application/application@2x.webp');
+  }
+}
