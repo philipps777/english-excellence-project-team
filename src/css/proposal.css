@@ -1,0 +1,246 @@
+.proposal-section-title {
+    font-size: 38px;
+    color: var(--white);
+    text-align: left;
+    margin-bottom: 65px;
+    line-height: 1.052;
+}
+
+.highlighted {
+    color: var(--green-middle)
+}
+
+.proposal-wrapper {
+    border-radius: 16px;
+    padding: 40px 20px 64px 20px;
+    background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
+}
+
+/* ???????????????????????????????????????????????? */
+
+.proposal-text {
+    border-radius: 16px;
+    background-color: var(--white);
+    padding: 40px 20.85px 40px 19.15px;
+
+    position: relative;
+    z-index: 1000;
+}
+
+/* .proposal-overlay::before,
+.proposal-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -5;
+} */
+
+/* .proposal-overlay::before {
+    left: 0;
+    transform: rotate(-9deg);
+    background-color: var(--green-light);
+}
+
+.proposal-overlay::after {
+    right: 0;
+    transform: rotate(11deg);
+    flex-shrink: 0;
+    background-color: var(--white-transparent);
+} */
+
+/* ???????????????????????????????????????????????? */
+
+.proposal-description {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin-bottom: 20px;
+}
+
+.proposal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.proposal-list-item {
+    position: relative;
+    padding-left: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--black);
+    line-height: 1.428;
+    letter-spacing: -0.28px;
+}
+
+.proposal-list-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/proposal/custom-marker.svg");
+}
+
+.proposal-link {
+    border-radius: 12px;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.714;
+    color: var(--white);
+    background-color: var(--green);
+    text-align: center;
+    padding: 14px 0;
+}
+
+.proposal-img {
+    display: none;
+    z-index: 8;
+}
+
+@media screen and (min-width: 768px) {
+
+    .proposal-wrapper  {
+        padding: 64px 32px 92.92px 32px;
+    }
+
+    .proposal-section-title {
+        font-size: 60px;
+        line-height: 1.17;
+        margin-bottom: 83.08px;
+    }
+
+    .proposal-text {
+        padding: 64.92px 32px 63.08px 32px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .proposal-description {
+        font-size: 40px;
+        letter-spacing: -0.8px;
+        margin-bottom: 32px;
+    }
+
+    .proposal-list-item {
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: -0.4px;
+        padding-left: 44px;
+        width: 440px;
+    }
+
+    .proposal-list-item::before {
+        width: 28px;
+        height: 28px;
+        background-image: url("../img/proposal/custom-marker-tablet-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;                    
+    }
+
+    .proposal-text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .proposal-list {
+        margin-bottom: 32px;
+        margin-right: 22px;
+    }
+
+    .proposal-link {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .proposal-img {
+        display: block;
+        width: 214px;
+        height: 263px;
+    }
+
+    /* .proposal-overlay::before {
+        left: 0;
+        transform: rotate(-9.864deg);
+        background-color: var(--green-light);
+}
+
+    .proposal-overlay::after {
+        right: 0;
+        transform: rotate(10.665deg);
+        flex-shrink: 0;
+        background-color: var(--white-transparent);
+    } */
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .proposal-wrapper {
+        padding: 64px 64px 141.67px 64px;
+    }
+
+    .proposal-section-title {
+        margin-bottom: 133.13px;
+    }
+
+    .proposal-text {
+        padding: 64.87px 32px 63.13px 64px;
+    }
+
+    .proposal-description {
+        margin-bottom: 42px
+    }
+
+    .proposal-list-item {
+        width: 645px;
+    }
+
+    .proposal-list-item:nth-child(2) {
+        width: 580px;
+    }
+
+    .proposal-list {
+        margin-bottom: 39px;
+    }
+
+    .proposal-list-item::before {
+    background-image: url("../img/proposal/custom-marker.svg");
+}
+
+    .proposal-link {
+        font-size: 18px;
+    }
+
+    .proposal-link:hover,
+    .proposal-link:focus {
+        background-color: var(--green-active);
+    }
+
+    /* .proposal-overlay::before {
+        left: 0;
+        transform: rotate(-8deg);
+        background-color: var(--green-light);
+    }
+
+    .proposal-overlay::after {
+        height: 402px;
+        right: 0;
+        transform: rotate(11deg);
+        flex-shrink: 0;
+        background-color: var(--white-transparent);
+    } */
+
+}
