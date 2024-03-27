@@ -49,15 +49,8 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .lessons-title {
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -0.8px;
-  }
-  .lessons-text {
-    font-size: 18px;
-    line-height: 1.67;
-    margin-bottom: 64px;
+  .lessons-description {
+    max-width: 658px;
   }
   .lessons-list {
     display: flex;
@@ -81,10 +74,6 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .lessons-text {
-    max-width: 665px;
-    margin: 0 auto 64px;
-  }
   .lessons-item {
     flex-basis: calc((100% - 64px) / 3);
     padding: 32px;
