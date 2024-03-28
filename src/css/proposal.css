@@ -259,6 +259,7 @@
     .proposal-link:focus {
         background-color: var(--green-active);
     }
+    
 
     .proposal-overlay::before {
         left: -24px;
