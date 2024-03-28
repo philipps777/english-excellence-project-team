@@ -209,6 +209,11 @@
 
 @media screen and (min-width: 1280px) {
 
+    .proposal-container {
+        width: 1152px;
+        padding: 0;
+    }
+
     .proposal-wrapper {
         padding: 64px 64px 141.67px 64px;
     }
@@ -250,15 +255,18 @@
     }
 
     .proposal-overlay::before {
-        left: 0;
+        left: -24px;
+        width: 1050px;
+        height: 463px;
         transform: rotate(-8deg);
         background-color: var(--green-light);
     }
 
     .proposal-overlay::after {
-        top: 8px;
+        top: 50px;
         right: 0;
         height: 402px;
+        width: 1011px;
         transform: rotate(11deg);
         flex-shrink: 0;
         background-color: var(--white-transparent);
