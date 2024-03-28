@@ -158,7 +158,7 @@
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: -0.4px;
-        width: 440px;
+        width: 448px;
     }
 
     .proposal-icon {
@@ -186,6 +186,7 @@
 
     .proposal-img {
         display: block;
+        max-width: fit-content;
         width: 214px;
         height: 263px;
         z-index: 8;
@@ -233,6 +234,10 @@
         margin-bottom: 42px
     }
 
+    .proposal-list {
+        margin-right: 92px;
+    }
+
     .proposal-list-item {
         width: 655px;
     }
@@ -247,7 +252,8 @@
 
     .proposal-link {
         font-size: 18px;
-    }
+        transition: var(--transition-timing);
+}
 
     .proposal-link:hover,
     .proposal-link:focus {
