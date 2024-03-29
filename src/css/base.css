@@ -52,8 +52,8 @@ body {
   font-style: normal;
   font-weight: 400;
   src: local('Manrope'),
-    url(../../fonts/Manrope/manrope-v14-latin-regular.woff2) format('woff2'),
-    url(../../fonts/Manrope/manrope-v14-latin-regular.ttf) format('truetype');
+    url(../fonts/Manrope/manrope-v14-latin-regular.woff2) format('woff2'),
+    url(../fonts/Manrope/manrope-v14-latin-regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -62,8 +62,8 @@ body {
   font-style: normal;
   font-weight: 600;
   src: local('Manrope'),
-    url(../../fonts/Manrope/manrope-v14-latin-600.woff2) format('woff2'),
-    url(../../fonts/Manrope/manrope-v14-latin-600.ttf) format('truetype');
+    url(../fonts/Manrope/manrope-v14-latin-600.woff2) format('woff2'),
+    url(../fonts/Manrope/manrope-v14-latin-600.ttf) format('truetype');
 }
 
 @font-face {
@@ -72,8 +72,8 @@ body {
   font-style: normal;
   font-weight: 700;
   src: local('Manrope'),
-    url(../../fonts/Manrope/manrope-v14-latin-700.woff2) format('woff2'),
-    url(../../fonts/Manrope/manrope-v14-latin-700.ttf) format('truetype');
+    url(../fonts/Manrope/manrope-v14-latin-700.woff2) format('woff2'),
+    url(/../fonts/Manrope/manrope-v14-latin-700.ttf) format('truetype');
 }
 
 .visually-hidden {
