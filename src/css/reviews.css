@@ -21,16 +21,26 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--black);
-  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.student-item-description {
+  font-size: 12px;
+  line-height: 1.33333;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .student-item-text {
   font-size: 14px;
   line-height: 1.71429;
-  text-align: center;
   color: var(--black-50-transparent);
+  padding: 0 16px;
+}
+
+.student-descr-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .review-section-list {
@@ -43,11 +53,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  padding: 20px 16px;
+  border-radius: 16px;
+  max-width: 335px;
+  background: var(--gray);
 }
 
-.review-section-item img {
-  width: 80px;
-  height: 80px;
+.review-section-item-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 8px;
+  height: 78px;
+  background: var(--green);
 }
 
 @media screen and (min-width: 768px) {
@@ -55,6 +76,23 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 32px;
+  }
+
+  .student-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .review-section-item {
+    gap: 32px;
+    width: calc((100% - 1 * 32px) / 2);
+    padding: 32px 16px;
+    border-radius: 30px;
+  }
+
+  .review-section-item-wrapper {
+    border-radius: 15px;
+    padding: 16px;
   }
 
   .student-item {
@@ -73,5 +111,22 @@
 @media screen and (min-width: 1280px) {
   .review-section-list {
     flex-wrap: nowrap;
+  }
+
+  .review-section-item {
+    width: calc((100% - 2 * 32px) / 3);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .review-section-list .review-section-item:not(:first-child) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .review-section-list
+    .review-section-item:not(:first-child):not(:nth-child(2)) {
+    display: none;
   }
 }
