@@ -1,7 +1,6 @@
 /* mobile 1x */
 
 .hero-section {
-  padding-block: 8px 21px;
   color: var(--white);
 }
 
@@ -41,10 +40,10 @@
 
   width: clamp(278px, calc(100vw - 40px), 335px);
   height: clamp(604px, 189vw, 708px);
-  padding-inline: 20px;
-  padding-inline: clamp(16px, 5.334vw, 20px);
+  padding: 20px;
+  padding: clamp(16px, 5.334vw, 20px);
   padding-bottom: 72px;
-  margin-inline: auto;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -176,7 +175,7 @@
 /* tablet 1x */
 
 @media screen and (min-width: 768px) {
-  .hero__bg-image {
+  .hero-bg-image {
     background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
@@ -206,7 +205,7 @@
 /* desktop 1x */
 
 @media screen and (min-width: 1280px) {
-  .hero__bg-image {
+  .hero-bg-image {
     background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
