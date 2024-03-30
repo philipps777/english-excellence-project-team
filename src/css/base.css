@@ -41,11 +41,6 @@ body {
   overflow: hidden;
 }
 
-/* .section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-} */
-
 @font-face {
   font-display: swap;
   font-family: 'Manrope';
@@ -89,11 +84,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .section-title {
@@ -147,7 +137,6 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
-  width: 658px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -167,6 +156,7 @@ body {
     font-size: 18px;
     line-height: 1.66667;
     margin-bottom: 64px;
+    width: 658px;
   }
 }
 
