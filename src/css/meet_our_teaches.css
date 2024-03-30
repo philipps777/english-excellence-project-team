@@ -45,6 +45,7 @@
     width: 272px;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 0px;
   }
 
   .teacher-item-text {
