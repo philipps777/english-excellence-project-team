@@ -153,9 +153,11 @@
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(../img/hero/hero-mobile.jpg) no-repeat;
+    url(../img/hero/hero-mobile.webp) no-repeat;
   background-size: cover;
 }
+
+
 
 /* mobile 2x */
 
@@ -169,7 +171,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url(../img/hero/hero-mobile@2x.jpg) no-repeat;
+      url(../img/hero/hero-mobile@2x.webp) no-repeat;
     background-size: cover;
   }
 }
@@ -183,7 +185,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url(../img/hero/hero-tablet.jpg) no-repeat;
+      url(../img/hero/hero-tablet.webp) no-repeat;
   }
 }
 
@@ -199,7 +201,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url(../img/hero/hero-tablet@2x.jpg) no-repeat;
+      url(../img/hero/hero-tablet@2x.webp) no-repeat;
     background-size: cover;
   }
 }
@@ -213,7 +215,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url(../img/hero/hero.jpg) no-repeat;
+      url(../img/hero/hero.webp) no-repeat;
     background-size: cover;
   }
 }
@@ -230,7 +232,7 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url(../img/hero/hero@2x.jpg) no-repeat;
+      url(../img/hero/hero@2x.webp) no-repeat;
     background-size: cover;
   }
 }
