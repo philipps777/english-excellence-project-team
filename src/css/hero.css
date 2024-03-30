@@ -83,12 +83,13 @@
   border: none;
   background: var(--green);
 
-  transition: background-color var(--transition-timing) var(--transition-effect);
+  transition: background-color var(--transition-timing);
 }
 
 .leave-an-application-link:hover,
 .leave-an-application-link:focus {
   background-color: var(--green-active);
+  transition: background-color var(--transition-timing);
 }
 
 @media screen and (min-width: 768px) {
