@@ -1,6 +1,7 @@
 /* mobile 1x */
 
 .hero-section {
+  padding-block: 8px 21px;
   color: var(--white);
 }
 
