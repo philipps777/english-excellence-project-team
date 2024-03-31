@@ -10,8 +10,7 @@
 @import url('./leave_application.css');
 @import url('./reviews.css');
 @import url('./footer.css');
-/* @import url('./mobile_menu.css'); */
+
 @import url('./scroll-button.css');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css');
-@import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');
