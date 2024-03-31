@@ -1,7 +1,7 @@
 /* mobile 1x */
 
 .hero-section {
-  padding: 8px 21px 0px; 
+  padding: 8px 21px 0px;
   color: var(--white);
 }
 
@@ -157,8 +157,6 @@
   background-size: cover;
 }
 
-
-
 /* mobile 2x */
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -166,6 +164,7 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero-bg-image {
+    border-radius: 16px;
     background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
@@ -180,6 +179,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-bg-image {
+    border-radius: 30px;
     background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
@@ -196,6 +196,7 @@
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-bg-image {
+    border-radius: 30px;
     background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
@@ -210,6 +211,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero-bg-image {
+    border-radius: 30px;
     background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
@@ -227,6 +229,7 @@
   screen and (min-width: 1280px) and (min-resolution: 192dpi),
   screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero-bg-image {
+    border-radius: 30px;
     background: linear-gradient(
         57deg,
         rgba(0, 0, 0, 0.4) 0%,
